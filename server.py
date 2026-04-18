@@ -14,13 +14,13 @@ def main_page():
 @app.route("/<int:num>")
 def game(num):
     if num > random_int:
-        return '<h1 style="color;red:">Too High, Guess Again!</h1>' \
+        return '<h1 style="color:red;">Too High, Guess Again!</h1>' \
                '<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWNvcDVwZmlvaGJsbzEzNzRiMnk0b245bHF3cGhidWZxYXV1YWZkZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XJ26ITqTztKS4G50p6/giphy.gif">'
     elif num < random_int:
-        return '<h1 style="color;red:>Too Low, Guess Again!</h1>' \
+        return '<h1 style="color:red;">Too Low, Guess Again!</h1>' \
                '<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWNvcDVwZmlvaGJsbzEzNzRiMnk0b245bHF3cGhidWZxYXV1YWZkZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XJ26ITqTztKS4G50p6/giphy.gif">'
     else:
-        return '<h1 style="color;green:>Yeah !!!</h1>' \
+        return '<h1 style="color:green;">Yeah !!!</h1>' \
                '<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmwydWxkcWljNGZua3Rscm9xYzNlNjNhOHVvdGNnenpvNHl0bTA4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d6pNlKJlSI1PTR4Uih/giphy.gif">'
 
 if __name__ == "__main__":
